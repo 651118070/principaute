@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Montserrat:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-hover: rgb(55, 23, 20);
+  --color-button:#c9a96e;
+}
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    overflow-x: hidden;
+    
+    font-weight: 300;
+    background-color: #0A0906;
+    color: #F0EAD6;
+    font-family: 'Montserrat', sans-serif;
+  }
+  body::-webkit-scrollbar{
+    display: none;
+  }
+
+  :root {
+    --gold: #C9A96E;
+    --gold-light: #E8D5A3;
+    --gold-dark: #8B6914;
+
+    --dark: #0A0906;
+    --dark-2: #14110C;
+    --dark-3: #1E1A14;
+
+    --cream: #F7F2E8;
+    --cream-2: #EDE6D5;
+
+    --text-light: #F0EAD6;
+    --text-muted: #A89880;
+
+    --serif: 'Cormorant Garamond', Georgia, serif;
+    --sans: 'Montserrat', sans-serif;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply bg-button text-white text-lg px-6 py-2 rounded-full  border-none cursor-pointer transition-all duration-300 hover:bg-[#d8bb86] font-sans;
+  }
+}
