@@ -18,7 +18,7 @@ const testimonials = [
   {
     name: "Ibrahim Kouassi",
     role: "Entrepreneur, Abidjan",
-    text: "Le Prestige Lounge est incomparable en Afrique Centrale.",
+    text: "?Ibiza Lounge est incomparable en Afrique Centrale.",
   },
   {
     name: "Nadine Tchinda",
