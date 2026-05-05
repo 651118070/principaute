@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/CTA";
 import douala from '../assets/images/about.jpg'
@@ -116,7 +116,7 @@ const Branches = () => {
           </p>
 
           <span className="inline-block mt-4 text-[10px] tracking-[0.3em] uppercase text-button border-b border-button/30 group-hover:border-button transition">
-           <a href={branch.link}> Découvrir →</a>
+           <Link to={branch.link}> Découvrir →</Link>
           </span>
 
         </div>
