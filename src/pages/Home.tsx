@@ -1,5 +1,5 @@
 import Amenities from '../components/Ameneties'
-import Branches from '../components/Branches'
+// import Branches from '../components/Branches'
 import Footer from '../components/CTA'
 import Gallery from '../components/Gallery'
 import Hero from '../components/Hero'
@@ -18,7 +18,7 @@ export default function Home() {
    <BrandStory/>
    <Rooms/>
    <Amenities/>
-   <Branches/>
+   {/* <Branches/> */}
    <Testimonials/>
    <Gallery/>
    <Footer/>

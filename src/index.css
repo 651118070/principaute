@@ -53,6 +53,6 @@
 
 @layer components {
   .btn {
-    @apply bg-button text-white text-lg px-6 py-2 rounded-full  border-none cursor-pointer transition-all duration-300 hover:bg-[#d8bb86] font-sans;
+    @apply bg-button text-white text-center text-lg px-6 py-2 rounded-full  border-none cursor-pointer transition-all duration-300 hover:bg-[#d8bb86] font-sans;
   }
 }

@@ -54,12 +54,12 @@ export default function Navbar() {
             Chambres
           </Link>
 
-          <Link
+          {/* <Link
             to="/services"
             className="text-[11px] tracking-[0.2em] uppercase text-neutral-500 hover:text-button transition-colors duration-300"
           >
             Services
-          </Link>
+          </Link> */}
 
           <Link
             to="/branches"
@@ -86,7 +86,7 @@ export default function Navbar() {
         {/* CTA Desktop */}
         <div className="hidden lg:flex">
           <a
-            href="https://wa.me/+237651118070"
+            href="https://wa.me/+237694243888"
             className="btn"
           >
             Réserver
@@ -147,13 +147,13 @@ export default function Navbar() {
             Chambres
           </Link>
 
-          <Link
+          {/* <Link
             to="/services"
             onClick={() => setIsOpen(false)}
             className="text-[12px] uppercase tracking-[0.2em] text-neutral-400 hover:text-button transition"
           >
             Services
-          </Link>
+          </Link> */}
 
           <Link
             to="/branches"
@@ -181,7 +181,7 @@ export default function Navbar() {
 
           <a
             href="https://wa.me/+237651118070"
-            className="mt-8 bg-button text-black py-4 text-center uppercase tracking-[0.2em] hover:bg-[#d8bb86] transition"
+            className="btn w-50"
           >
             Réserver
           </a>

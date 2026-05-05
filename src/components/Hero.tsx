@@ -23,22 +23,32 @@ const container = {
 const Hero = () => {
   return (
     <section
-      className="relative min-h-screen flex items-center justify-center overflow-hidden"
-      aria-label="Section d’accueil - Hôtel de luxe au Cameroun"
-    >
-      {/* Background Gradient */}
-      <div className="absolute inset-0 bg-linear-to-br from-[#0A0906] via-[#1a1208] to-[#0d0b07]" />
-
-      {/* Pattern Overlay */}
-      <div className="absolute inset-0 opacity-[0.04] bg-[repeating-linear-gradient(0deg,transparent,transparent_59px,rgba(201,169,110,1)_60px),repeating-linear-gradient(90deg,transparent,transparent_59px,rgba(201,169,110,1)_60px)]" />
-
-      {/* Content */}
-      <motion.div
-        variants={container}
-        initial="hidden"
-        animate="show"
-        className="relative z-10 text-center max-w-3xl px-6"
-      >
+    className="relative min-h-screen flex items-center justify-center overflow-hidden"
+    aria-label="Section d’accueil - Hôtel de luxe au Cameroun"
+  >
+    {/* VIDEO BACKGROUND */}
+    <video
+      className="absolute inset-0 w-full h-full object-cover z-0"
+      src="/src/assets/images/hotel.mp4"
+      autoPlay
+      loop
+      muted
+      playsInline
+    />
+  
+    {/* Overlay sombre (important pour lisibilité du texte) */}
+    <div className="absolute inset-0 bg-black/80 z-10" />
+  
+    {/* Pattern Overlay */}
+    <div className="absolute inset-0 opacity-[0.04] z-10 bg-[repeating-linear-gradient(0deg,transparent,transparent_59px,rgba(201,169,110,1)_60px),repeating-linear-gradient(90deg,transparent,transparent_59px,rgba(201,169,110,1)_60px)]" />
+  
+    {/* Content */}
+    <motion.div
+      variants={container}
+      initial="hidden"
+      animate="show"
+      className="relative z-20 text-center max-w-3xl px-6"
+  >
         {/* Subtitle */}
         <motion.p
           variants={container}
@@ -75,11 +85,11 @@ const Hero = () => {
           variants={container}
           className="flex flex-col sm:flex-row justify-center gap-4 md:gap-6"
         >
-          <button className="bg-button text-black px-8 md:px-10 py-3 text-[10px] tracking-[0.25em] uppercase font-medium transition hover:-translate-y-1 hover:bg-[#d8bc7a]">
+          <button className="btn">
             Découvrir les suites
           </button>
 
-          <button className="border border-button/50 text-button px-8 md:px-10 py-3 text-[10px] tracking-[0.25em] uppercase font-light transition hover:bg-button/10 hover:border-button">
+          <button className="rounded-full border border-button/50 text-button px-8 md:px-10 py-3 text-[10px] tracking-[0.25em] uppercase font-light transition hover:bg-button/10 hover:border-button">
             Nos emplacements
           </button>
         </motion.div>
@@ -92,7 +102,7 @@ const Hero = () => {
         transition={{ delay: 1.2, duration: 0.8 }}
         className="absolute bottom-6 md:bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
       >
-        <span className="text-[9px] tracking-[0.4em] uppercase text-gray-500">
+        <span className="text-[9px] tracking-[0.4em] uppercase text-white">
           Découvrir
         </span>
         <div className="w-px h-8 md:h-10 bg-linear-to-b from-button to-transparent animate-pulse" />

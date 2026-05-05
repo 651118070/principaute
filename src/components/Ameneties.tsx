@@ -1,12 +1,13 @@
 const amenities = [
-    { name: "Marriage" },
-    { name: "Anniversaire" },
-    { name: "Conciergerie 24/7" },
+    { name: "Marriages" },
+    { name: "Anniversaires" },
+    { name: "Séminaires" },
     { name: "Gastronomie Fine" },
-    { name: "Transfert Aéroport" },
-    { name: "Wi-Fi Premium" },
+    { name: "Wi-Fi Gratuit" },
     { name: "Parking Sécurisé" },
-    { name: "Centre de Bien-être" },
+    { name: "Évenements privés" },
+    { name: "À 5 minutes de l’aéroport" },
+    
   ];
   
   const Amenities = () => {

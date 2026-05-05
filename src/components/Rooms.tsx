@@ -1,23 +1,25 @@
 import royale from '../assets/images/royale.jpg'
+import prestige from '../assets/images/prestige.jpg'
+import princess from '../assets/images/princess.jpg'
 const Rooms = () => {
     const rooms = [
       {
-        category: "Prestige",
-        name: "Junior Suite",
-        price: "À partir de 85,000 XAF / nuit",
-        logo:royale
+        category: "Princesse",
+        name: "Suite Junior ",
+        price: "À partir de 42,000 XAF / nuit",
+        logo:princess
       },
       {
         category: "Royale",
-        name: "Presidential Suite",
-        price: "À partir de 250,000 XAF / nuit",
+        name: "Suite Presidential ",
+        price: "À partir de 52,000 XAF / nuit",
         logo:royale
       },
       {
-        category: "Princesse",
+        category: "Prestige",
         name: "Chambre Deluxe",
-        price: "À partir de 55,000 XAF / nuit",
-        logo:royale
+        price: "À partir de 32,000 XAF / nuit",
+        logo:prestige
       },
     ];
   
@@ -47,7 +49,7 @@ const Rooms = () => {
               <div className="absolute inset-0 transition-transform duration-700 group-hover:scale-105" />
   
               {/* dark overlay */}
-              <img src={room.logo} alt="room photo category" />
+              <img src={room.logo} alt="room photo category h-[50%]" />
   
               {/* CONTENT */}
               <div className="absolute bottom-0 left-0 right-0 p-6 bg-hover">
@@ -85,7 +87,7 @@ const Rooms = () => {
   
         {/* CTA */}
         <div className="text-center mt-16">
-          <button className="bg-button text-black px-10 py-3 text-[10px] tracking-[0.3em] uppercase font-medium hover:bg-[#d8bc7a] transition">
+          <button className="btn">
             Voir tous les hébergements
           </button>
         </div>
