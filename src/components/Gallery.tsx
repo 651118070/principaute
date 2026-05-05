@@ -1,14 +1,18 @@
 import { Link } from "react-router-dom";
-
+import ibiza from "../assets/images/ibiza.jpg";
+import lounge1 from "../assets/images/lounge1.jpg";
+import lounge2 from "../assets/images/lounge2.jpg";
+import lounge6 from "../assets/images/lounge6.jpg";
+import royale from "../assets/images/royale.jpg";
+import princess from "../assets/images/princess.jpg";
 const gallery = [
-  "ibiza",
-  "lounge1",
-  "lounge2",
-  "lounge6",
-  "royale",
-  "princess",
+  { img: ibiza },
+  { img: lounge1 },
+  { img: lounge2 },
+  { img: lounge6 },
+  { img: royale },
+  { img: princess },
 ];
-
 const Gallery = () => {
   return (
     <section className="py-24 px-6 md:px-16 bg-[#0f0c08]">
@@ -40,10 +44,10 @@ const Gallery = () => {
 
             {/* IMAGE */}
             <img
-              src={`src/assets/images/${item}.jpg`}
-              alt={item}
-              className="w-full h-full object-cover transition duration-700 group-hover:scale-110 group-hover:opacity-80"
-            />
+  src={item.img}
+  alt="gallery"
+  className="w-full h-full object-cover transition duration-700 group-hover:scale-110 group-hover:opacity-80"
+/>
 
             {/* OVERLAY */}
             <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent" />

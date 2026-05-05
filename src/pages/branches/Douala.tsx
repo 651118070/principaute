@@ -156,10 +156,13 @@ const BranchDouala = () => {
             <div className="flex flex-wrap gap-3">
               {[
                
-                "Salles de conférence & business",
+               [
+                "Salles de conférence & espaces business",
                 "Restaurant gastronomique",
                 "Lounge & bar VIP",
                 "Service premium 24/7",
+                "À 5 minutes de l’aéroport international"
+              ]
               ].map((item, i) => (
                 <span
                   key={i}

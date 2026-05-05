@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-
+import hero from '../assets/images/hotel.mp4'
 const container = {
   hidden: { opacity: 0 },
   show: {
@@ -30,7 +30,7 @@ const Hero = () => {
     {/* VIDEO BACKGROUND */}
     <video
       className="absolute inset-0 w-full h-full object-cover z-0"
-      src="/src/assets/images/hotel.mp4"
+      src={hero}
       autoPlay
       loop
       muted
