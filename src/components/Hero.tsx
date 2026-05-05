@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import hero from '../assets/images/hotel.mp4'
+import poster from '../assets/images/about.jpg'
 const container = {
   hidden: { opacity: 0 },
   show: {
@@ -35,6 +36,7 @@ const Hero = () => {
       loop
       muted
       playsInline
+      poster={poster}
     />
   
     {/* Overlay sombre (important pour lisibilité du texte) */}

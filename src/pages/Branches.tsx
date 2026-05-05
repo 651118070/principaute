@@ -48,6 +48,7 @@ const Branches = () => {
     loop
     muted
     playsInline
+    poster={bakassa}
     className="absolute inset-0 w-full h-full object-cover"
   >
     <source src="src/assets/images/bakassa.mp4" type="video/mp4" />
