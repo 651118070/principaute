@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const gallery = [
   "ibiza",
   "lounge1",
@@ -56,7 +58,7 @@ const Gallery = () => {
       {/* Button */}
       <div className="text-center mt-12">
         <button className="border rounded-full border-button text-button px-8 py-3 text-[10px] tracking-[0.3em] uppercase hover:bg-button/10 transition">
-          Voir toute la galerie
+          <Link to='/gallery'>Voir toute la galerie</Link>
         </button>
       </div>
 

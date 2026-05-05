@@ -9,7 +9,7 @@ const rooms = [
       title: "suite Royale",
       desc: "Spacieuse et élégamment aménagée, la chambre Deluxe offre un équilibre parfait entre confort et raffinement. Rideaux pleine hauteur, literie premium et espace de travail dédié.",
       price: "À partir de 52 000 XAF / nuit",
-      features: [ "Lit King Size", "Vue ville", "Salle de bain", "Espace de travail",'Wifi gratuit','Petit Dejeuner gratuit'],
+      features: [ "Lit King Size", "Vue ville","Salle de bain", "Espace de travail",'Wifi gratuit','Petit Dejeuner gratuit'],
       img:royale
     },
     {
@@ -17,7 +17,7 @@ const rooms = [
       title: "suite Junior",
       desc: "Une suite généreuse avec salon séparé, minibar premium et vue panoramique. Idéale pour ceux qui recherchent plus d’espace et une expérience raffinée.",
       price: "À partir de 42 000 XAF / nuit",
-      features: ["Vue panoramique", "Salon", "Wifi gratuit"],
+      features: ["Vue panoramique",'Climatisation', "Wifi gratuit","Salle de bain"],
       img:princess
     },
   
@@ -26,7 +26,7 @@ const rooms = [
       title: "Chambre Deluxe",
       desc: "Le sommet du luxe. Une suite sur deux niveaux avec terrasse privée, service majordome et vue panoramique sur Douala.",
       price: "À partir de 32 000 XAF / nuit",
-      features: [ "Wifi gratuit"],
+      features: [ "Wifi gratuit",'Climatisation',"Salle de bain"],
       img:prestige
     },
   ];
@@ -39,10 +39,9 @@ const rooms = [
     "Coffre-fort",
     "Service en chambre 24h/24",
     "Produits de toilette luxe",
-    "Linge en coton égyptien",
     "Rideaux occultants",
     "Fer à repasser",
-    "Peignoir & chaussons",
+    
     "Menu d’oreillers",
   ];
   
@@ -94,7 +93,7 @@ const rooms = [
               {room.tag}
             </p>
 
-            <h3 className="text-2xl font-serif mb-3">
+            <h3 className="text-2xl font-serif mb-3 mt-15">
               {room.title}
             </h3>
 
@@ -120,7 +119,7 @@ const rooms = [
                 {room.price}
               </span>
 
-              <button className="bg-button text-black px-5 py-2 text-xs tracking-[0.2em] uppercase hover:bg-[#d8bc7a] transition">
+              <button className="bg-button text-black btn px-5 py-2 text-xs tracking-[0.2em] uppercase hover:bg-[#d8bc7a] transition">
               <a href="https:wa.me/+237694243888">Réserver</a>
               </button>
             </div>
@@ -156,8 +155,8 @@ const rooms = [
     </div>
 
     <div className="mt-10">
-      <button className="bg-button text-black px-8 py-3 uppercase text-xs tracking-[0.3em] hover:bg-[#d8bc7a] transition">
-        Réserver votre suite
+      <button className="bg-button btn text-black px-8 py-3 uppercase text-xs tracking-[0.3em] hover:bg-[#d8bc7a] transition">
+        <a  href="https:wa.me/+237694243888">Réserver votre suite</a>
       </button>
     </div>
 

@@ -7,7 +7,7 @@ import bakassa from '../assets/images/bakassa.png'
 const branches = [
   {
     id: "01",
-    name: "Hôtel Prestige Urbain",
+    name: "Hôtel La Principauté",
     location: "Douala · Bonapriso",
     desc: "Le confort exécutif au cœur du centre économique du Cameroun.",
     img: douala,
@@ -15,7 +15,7 @@ const branches = [
   },
   {
     id: "02",
-    name: "Retraite Nature",
+    name: "La Principauté Bakassa",
     location: "Bakassa",
     desc: "Un luxe rare en parfaite harmonie avec la nature.",
     img:bakassa ,
@@ -23,7 +23,7 @@ const branches = [
   },
   {
     id: "03",
-    name: "Prestige Lounge",
+    name: "Ibiza Lounge",
     location: "Douala · Makepe",
     desc: "L’expérience sociale la plus exclusive de Douala.",
     img: ibiza,
@@ -88,7 +88,7 @@ const Branches = () => {
       >
         {/* IMAGE */}
         <div
-          className="absolute inset-0 bg-cover object-cover bg-center transition-transform duration-700 group-hover:scale-110"
+          className="absolute inset-0 bg-cover  bg-center transition-transform duration-700 group-hover:scale-110"
           style={{ backgroundImage: `url(${branch.img})` }}
         />
 
@@ -98,7 +98,7 @@ const Branches = () => {
         {/* CONTENT */}
         <div className="absolute bottom-0 p-6 z-10">
 
-          <div className="text-5xl font-serif text-button/20">
+          <div className="text-5xl font-serif text-white">
             {branch.id}
           </div>
 

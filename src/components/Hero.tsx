@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const container = {
   hidden: { opacity: 0 },
@@ -86,11 +87,11 @@ const Hero = () => {
           className="flex flex-col sm:flex-row justify-center gap-4 md:gap-6"
         >
           <button className="btn">
-            Découvrir les suites
+           <Link to='/rooms'> Découvrir les suites</Link>
           </button>
 
           <button className="rounded-full border border-button/50 text-button px-8 md:px-10 py-3 text-[10px] tracking-[0.25em] uppercase font-light transition hover:bg-button/10 hover:border-button">
-            Nos emplacements
+           <Link to='/branches'>Nos emplacements</Link>
           </button>
         </motion.div>
       </motion.div>

@@ -99,8 +99,8 @@ const Footer = () => {
   
             <div className="flex gap-6">
              
-             <Link to=''>Facebook</Link>
-             <Link to=''>Instagram</Link>
+             <Link to='https://web.facebook.com/laprincipautehotel'>Facebook</Link>
+             <Link to='https://www.instagram.com/laprincipautehotel/'>Instagram</Link>
              
             </div>
   

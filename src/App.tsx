@@ -7,9 +7,8 @@ import About from './pages/About'
 import Room from './pages/Room'
 import Branches from './pages/Branches'
 import BranchDouala from './pages/branches/Douala'
-import BranchBakassa from './pages/Bakassa'
+import BranchBakassa from './pages/branches/Bakassa'
 import BranchLounge from './pages/branches/Lounge'
-
 function App() {
  
   return (

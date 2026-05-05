@@ -33,24 +33,24 @@ const Contact = () => {
 
           <div className="w-12 h-px bg-button mt-4" />
         </div>
-
+      
         {/* CONTACT INFO */}
         {[
           {
             label: "Téléphone",
-            value: "+237 600 000 000\n+237 699 000 000",
+            value: "+237 650 23 57 70\n+237 694 24 38 88",
           },
           {
             label: "WhatsApp",
-            value: "+237 600 000 000\nDisponible 24h/24",
+            value: "+237 694 24 38 88\nDisponible 24h/24",
           },
           {
             label: "Email",
-            value: "info@prestige.cm\nreservations@prestige.cm",
+            value: "groupeprincipaute@gmail.com",
           },
           {
             label: "Adresse",
-            value: "Akwa, Douala\nCameroun",
+            value: "Rue Koloko,Bonapriso\nCameroun",
           },
         ].map((item, i) => (
           <div key={i} className="border-l border-button/30 pl-4">
@@ -95,9 +95,9 @@ const Contact = () => {
 
           <select className="bg-[#14100a] border border-button/20 p-3 text-sm w-full">
             <option>Choisir une destination</option>
-            <option>Douala</option>
-            <option>Bakassa</option>
-            <option>Lounge</option>
+            <option>Douala,Hotel</option>
+            <option>Bakassa,Hotel</option>
+            <option>Douala,Lounge</option>
           </select>
 
           <textarea
@@ -110,7 +110,7 @@ const Contact = () => {
           </button>
 
           <p className="text-xs text-gray-500">
-            Réponse sous 2h en journée / 6h hors horaires
+            Réponse sous 2h en journée
           </p>
 
         </div>

@@ -1,80 +1,66 @@
 import Footer from "../../components/CTA";
 import Navbar from "../../components/Navbar";
 
-// IMAGES
-import hero from "../../assets/images/hotel.mp4";
-import img1 from "../../assets/images/desk.jpg";
-import img2 from "../../assets/images/desk1.jpg";
-import img3 from "../../assets/images/desk3.jpg";
-import img4 from "../../assets/images/lounge5.jpg";
-import img5 from "../../assets/images/lounge6.jpg";
-import img6 from "../../assets/images/lounge2.jpg";
-import img7 from "../../assets/images/lounge3.jpg";
-import img8 from "../../assets/images/lounge4.jpg";
+// IMPORT IMAGES
+import hero from "../../assets/images/bakassa.mp4";
+import img1 from "../../assets/images/about.jpg";
+import img2 from "../../assets/images/about.jpg";
+import img3 from "../../assets/images/about.jpg";
+import img4 from "../../assets/images/about.jpg";
 
-const images = [img1, img2, img3, img4,img5,img6,img7,img8];
+const images = [img1, img2, img3, img4];
 
-const BranchDouala = () => {
+const BranchBakassa = () => {
   return (
     <>
       <Navbar />
 
       <div className="bg-[#0f0c08] text-white">
-
         {/* HERO */}
         <section className="relative h-[80vh] flex items-end">
-        <video
-      className="absolute inset-0 w-full h-full object-cover z-0"
-      src={hero}
-      autoPlay
-      loop
-      muted
-      playsInline
-    />
-
+          <video
+            className="absolute inset-0 w-full h-full object-cover z-0"
+            src={hero}
+            autoPlay
+            loop
+            muted
+            playsInline
+          />
           <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/40 to-transparent" />
 
           <div className="relative z-10 px-6 md:px-16 pb-16 max-w-2xl">
             <p className="text-xs tracking-[0.4em] uppercase text-button mb-3">
-              Douala · Bonapriso
+              Bakassa
             </p>
 
             <h1 className="text-4xl md:text-6xl font-serif leading-tight">
-              Hôtel Prestige <br />
-              <em className="text-button italic">La Principauté</em>
+              La Principauté<em className="text-button italic">Bakassa</em>
             </h1>
 
             <p className="text-gray-300 mt-4 text-sm">
-              L’adresse incontournable où se rencontrent affaires, élégance et
-              art de vivre au cœur de Douala.
+              Un refuge rare où le luxe rencontre la sérénité de la nature
+              camerounaise.
             </p>
           </div>
         </section>
 
         {/* STORY */}
         <section className="px-6 md:px-16 py-20 grid md:grid-cols-2 gap-16 items-center">
-
           <div>
-            <p className="text-xs uppercase tracking-[0.4em] text-button mb-4">
-              L’expérience
-            </p>
-
-            <h2 className="text-3xl md:text-5xl font-serif mb-6">
-              Le luxe urbain <em className="text-button italic">réinventé</em>
+            <h2 className="text-3xl font-serif mb-6">
+              Une expérience{" "}
+              <em className="text-button italic">hors du temps</em>
             </h2>
 
-            <div className="w-10 h-px bg-button mb-6" />
-
             <p className="text-gray-400 mb-6 leading-7">
-              Situé à Bonapriso, l’un des quartiers les plus prisés de Douala,
-              La Principauté est bien plus qu’un hôtel : c’est une signature.
-              Un lieu où le confort rencontre la performance, pensé pour les
-              voyageurs exigeants et les décideurs.
+              Nichée au cœur d’un paysage naturel préservé, Bakassa est bien
+              plus qu’un hôtel. C’est une parenthèse. Un lieu où le silence, le
+              confort et l’élégance s’unissent pour offrir une expérience rare.
             </p>
 
             <p className="text-gray-400 leading-7">
-              Ici, chaque détail est conçu pour offrir une expérience fluide,
-              élégante et parfaitement adaptée au rythme de la ville.
+              Ici, chaque détail est pensé pour vous reconnecter à l’essentiel,
+              sans jamais renoncer au luxe.
             </p>
 
             {/* STATS */}
@@ -82,21 +68,14 @@ const BranchDouala = () => {
               <div>
                 <p className="text-button text-2xl font-serif">20</p>
                 <p className="text-xs text-gray-500 uppercase tracking-widest">
-                  Chambres & suites
+                  Chalets privés
                 </p>
               </div>
 
               <div>
-                <p className="text-button text-2xl font-serif">3</p>
+                <p className="text-button text-2xl font-serif">2</p>
                 <p className="text-xs text-gray-500 uppercase tracking-widest">
-                  Espaces restauration
-                </p>
-              </div>
-
-              <div>
-                <p className="text-button text-2xl font-serif">24/7</p>
-                <p className="text-xs text-gray-500 uppercase tracking-widest">
-                  Service concierge
+                  Hectares naturels
                 </p>
               </div>
             </div>
@@ -114,14 +93,13 @@ const BranchDouala = () => {
 
         {/* GALLERY */}
         <section className="px-6 md:px-16 pb-20">
-
           <div className="text-center mb-12">
             <p className="text-xs tracking-[0.4em] uppercase text-button">
-              Découvrir
+              Expérience visuelle
             </p>
 
             <h2 className="text-3xl font-serif mt-3">
-              L’univers <em className="text-button italic">La Principauté</em>
+              Explorez <em className="text-button italic">Bakassa</em>
             </h2>
           </div>
 
@@ -136,30 +114,34 @@ const BranchDouala = () => {
               </div>
             ))}
           </div>
-
         </section>
 
-        {/* SERVICES */}
+        {/* EXPERIENCES */}
         <section className="px-6 md:px-16 py-20 bg-[#14100a]">
-
           <div className="max-w-3xl">
             <h2 className="text-3xl font-serif mb-6">
-              Pensé pour les <em className="text-button italic">exigeants</em>
+              Le luxe dans chaque{" "}
+              <em className="text-button italic">instant</em>
             </h2>
 
             <p className="text-gray-400 mb-8">
-              Que ce soit pour affaires ou pour le plaisir, chaque espace est conçu
-              pour offrir performance, confort et élégance dans un environnement
-              urbain dynamique.
+            La Principauté Bakassa vous invite à ralentir. Ici, loin du bruit et de la
+              pression, vous retrouvez une richesse rare : le calme, l’espace et
+              l’authenticité. Promenades au cœur de paysages préservés,
+              rencontres avec la culture locale, cuisine bio issue du terroir et
+              moments suspendus sous les étoiles… chaque expérience est une
+              invitation à vivre autrement. Un luxe discret, profondément
+              humain, que seule la nature peut offrir.
             </p>
 
             <div className="flex flex-wrap gap-3">
               {[
-               
-                "Salles de conférence & business",
-                "Restaurant gastronomique",
-                "Lounge & bar VIP",
-                "Service premium 24/7",
+                "Cuisine bio locale & expériences culinaires",
+                "Soirées feu de camp & moments sous les étoiles",
+                "Mariages intimistes en pleine nature",
+                "Événements privés & anniversaires",
+                "Séminaires & conférences en cadre apaisant",
+                "Retraites bien-être & team building"
               ].map((item, i) => (
                 <span
                   key={i}
@@ -181,9 +163,7 @@ const BranchDouala = () => {
               Réserver maintenant
             </a>
           </div>
-
         </section>
-
       </div>
 
       <Footer />
@@ -191,4 +171,4 @@ const BranchDouala = () => {
   );
 };
 
-export default BranchDouala;
+export default BranchBakassa;

@@ -9,7 +9,7 @@ const timeline = [
     },
   
     {
-      year: "2023",
+      year: "2024",
       title: "Expansion à Bakassa",
       desc: "Création d’un espace de retraite exclusif, alliant nature, sérénité et luxe dans un cadre exceptionnel.",
     },
@@ -147,7 +147,7 @@ const timeline = [
   
                 <div className="absolute -left-1.5 top-2 w-3 h-3 bg-button rounded-full" />
   
-                <p className="text-xs tracking-[0.3em] text-button mb-1">
+                <p className="text-xs tracking-[0.3em] text-button mb-1 pl-2">
                   {item.year}
                 </p>
   

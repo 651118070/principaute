@@ -65,7 +65,7 @@ export default function Navbar() {
             to="/branches"
             className="text-[11px] tracking-[0.2em] uppercase text-neutral-500 hover:text-button transition-colors duration-300"
           >
-            Succursales
+            Branches
           </Link>
 
           <Link
@@ -160,7 +160,7 @@ export default function Navbar() {
             onClick={() => setIsOpen(false)}
             className="text-[12px] uppercase tracking-[0.2em] text-neutral-400 hover:text-button transition"
           >
-            Succursales
+           Branches
           </Link>
 
           <Link

@@ -1,6 +1,7 @@
 import royale from '../assets/images/royale.jpg'
 import prestige from '../assets/images/prestige.jpg'
 import princess from '../assets/images/princess.jpg'
+import { Link } from 'react-router-dom';
 const Rooms = () => {
     const rooms = [
       {
@@ -71,12 +72,7 @@ const Rooms = () => {
                     {room.price}
                   </span>
   
-                  <button
-                    onClick={() => console.log("view room")}
-                    className="text-[9px] tracking-[0.3em] uppercase text-gray-400 border border-button/30 px-4 py-1 hover:text-button hover:border-button transition"
-                  >
-                    Voir
-                  </button>
+              
   
                 </div>
               </div>
@@ -88,7 +84,7 @@ const Rooms = () => {
         {/* CTA */}
         <div className="text-center mt-16">
           <button className="btn">
-            Voir tous les hébergements
+            <Link to='/rooms'>Voir tous les hébergements</Link>
           </button>
         </div>
   
